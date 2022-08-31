@@ -1,0 +1,24 @@
+stages:
+  - validate
+
+variables:
+  IMAGE_VER: 3.13.5
+
+image: alpine:${IMAGE_VER}
+
+validate1:
+  image: alpine:3.13.5
+  stage: validate
+  script:
+    - echo "hello"
+
+validate2:
+  stage: validate
+  script:
+    - echo "hello"
+
+validate3:
+  image: alpine:$IMAGE_VER
+  stage: validate
+  script:
+    - echo "hello"
