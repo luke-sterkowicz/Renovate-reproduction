@@ -7,7 +7,7 @@ variables:
 image: alpine:${IMAGE_VER}
 
 validate1:
-  image: alpine:3.13.5
+  image: alpine:3.16.3
   stage: validate
   script:
     - echo "hello"
